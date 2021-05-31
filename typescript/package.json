@@ -1,0 +1,29 @@
+{
+  "name": "cambiar_nombre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --ext .js,.ts",
+    "prettier:check": "prettier --check \"src/**/*.ts\"",
+    "prettier:format": "prettier --write \"src/**/*.ts\"",
+    "compile": "npx tsc -p tsconfig.json",
+    "watch": "npx tsc --watch",
+    "clean": "rimraf dist/",
+    "tsuml2": "tsuml2 --glob ./src/**/*.ts",
+    "tplant": "tplant --input ./src/**/*.ts --output Playground.svg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "tplant": "^3.1.0",
+    "tsuml2": "^0.6.1",
+    "typescript": "^4.7.4"
+  }
+}
